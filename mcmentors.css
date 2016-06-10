@@ -59,19 +59,6 @@
   animation-delay: 0.7s;
 }
 
-
-.test { color: red;
-		font-size: 30pt;
-		font-family: sans-serif;
-		animation-name: bobble1;
-		animation-duration: 1s;
-}
-
-.testcontainer {
-		animation-name: bobble2;
-		animation-duration: 1s;
-}
-
 .column-colored {
 		background-color: red;
 }
@@ -88,12 +75,11 @@
 .mcm-background.mentors {
 		background-color: #2782CF
 }
-@import url(https://fonts.useso.com/css?family=Roboto);
-@import url(http://fonts.useso.com/css?family=Lato);
+
 
 .center-title {
 		font-size: 40pt;
-		font-family: 'Lato', sans-serif;
+		font-family: "News Cycle", sans-serif;
 }
 
 .center-title.wtxt {
@@ -103,19 +89,37 @@
 .heading-2 {
 		color: white;
 		font-size: 25pt;
-		font-family: 'Lato', sans-serif;
+		font-family: 'News Cycle', sans-serif;
 		text-align: center;
 }
 .section {
 	height: 100vh;
 }
 
+.section.orange {
+  background-color: #F59949;
+}
+
+.section.blue {
+  background-color: #2782CF;
+}
 img.center {
     display: block;
     margin: 0 auto;
 }
 
+img.icon-graphic {
+    width: 50%
+}
+
+img.top-logo {
+    width: 37%;
+}
 .coming-soon.background {
     background-color: #2782CF;
     height: 100vh;
+}
+
+.row.icon-container {
+  padding-top:5vh
 }
