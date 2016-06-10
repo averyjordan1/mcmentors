@@ -52,7 +52,9 @@
   -moz-animation-duration:1s;
   animation-duration:1s;
 }
-
+.navbar{
+  height: 6vh;
+}
 .fade-in.one {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
@@ -100,9 +102,25 @@
   background-color: #F59949;
 }
 
+.section.left {
+  background: linear-gradient(to right bottom, #2782CF 50%, #F59949 50%);
+}
+
+.section.right {
+  background: linear-gradient(to left top, #2782CF 50%, #F59949 50%);
+}
 .section.blue {
   background-color: #2782CF;
 }
+
+.section.two-tone-blue{
+  background: linear-gradient(to right bottom, #2782CF 50%, #1D629C 50%);
+}
+.section.two-tone-blue.shadow{
+  background: linear-gradient(to right bottom, #2782CF 49.5%, #000000 .5%, #1D629C 50%);
+  height: 93.7vh;
+}
+
 img.center {
     display: block;
     margin: 0 auto;
