@@ -1,3 +1,15 @@
+/*
+Color Scheme Guidelines:
+
+Primary Color: #2782CF;
+Secondary Color: #F59949;
+Primary Accent: #1D629C;
+Secondary Accent: #C2793A;
+Primary Text: #FFFFFF;
+Accent Text: #000000;
+
+*/
+
 .h1 { color:red;
 	  font-size: 100;}
 
@@ -54,7 +66,7 @@
 
 .center-title {
 		font-size: 40pt;
-		font-family: "News Cycle", sans-serif;
+		font-family: "Allerta Stencil", sans-serif;
 }
 
 .center-title.wtxt {
@@ -64,7 +76,7 @@
 .heading-2 {
 		color: white;
 		font-size: 25pt;
-		font-family: 'News Cycle', sans-serif;
+		font-family: 'Palanquin', sans-serif;
 		text-align: center;
 }
 .section {
@@ -144,4 +156,11 @@ img.top-logo {
   to {
     margin-right: 80%;
   }
+}
+.row.primary-blue {
+  background-color: #2782CF;
+  z-index: 5;
+}
+.row.accent-blue {
+  background-color: #1D629C;
 }
