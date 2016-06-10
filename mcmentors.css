@@ -6,33 +6,6 @@
 	to {color: yellow;}
 }
 
-@keyframes bobble1 {
-    0% {
-        transform: translate3d(50px, 40px, 0px);
-        animation-timing-function: ease-in;
-    }
-    50% {
-        transform: translate3d(50px, 50px, 0px);
-        animation-timing-function: ease-out;
-    }
-    100% {
-        transform: translate3d(50px, 40px, 0px);
-    }
-}
-
-@keyframes bobble2 {
-    0% {
-        transform: translate3d(30px, 50px, 0px);
-        animation-timing-function: ease-in;
-    }
-    50% {
-        transform: translate3d(50px, 50px, 0px);
-        animation-timing-function: ease-out;
-    }
-    100% {
-        transform: translate3d(30px, 50px, 0px);
-    }
-}
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -121,6 +94,15 @@
   height: 93.7vh;
 }
 
+.section.two-tone-orange{
+  background: linear-gradient(to right bottom, #F59949 50%, #C2793A 50%);
+}
+
+.section.two-tone-orange.shadow{
+  background: linear-gradient(to right bottom, #F59949 49.5%, #000000 .5%, #C2793A 50%);
+  height: 93.7vh;
+}
+
 img.center {
     display: block;
     margin: 0 auto;
@@ -140,4 +122,26 @@ img.top-logo {
 
 .row.icon-container {
   padding-top:5vh
+}
+
+/*SLIDE TITLE*/
+
+.title-slide {
+
+  animation-duration: 5s;
+  animation: slowdownslide;
+}
+
+.delay-half-s {
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes slowdownslide {
+  from {
+    margin-right: 100%;
+  }
+
+  to {
+    margin-right: 80%;
+  }
 }
