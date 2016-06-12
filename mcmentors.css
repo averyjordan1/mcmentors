@@ -52,12 +52,11 @@ Accent Text: #000000;
 
 .navbar-shadow {
 		box-shadow: 0 0 10px;
-
 }
 
-.mcm-background {
+/*.mcm-background {
 		padding-top:50px;
-}
+}*/
 
 .mcm-background.mentors {
 		background-color: #2782CF
@@ -80,7 +79,7 @@ Accent Text: #000000;
 		text-align: center;
 }
 .section {
-	height: 93.7vh;
+	height: 100vh;
 }
 
 .section.orange {
@@ -213,6 +212,16 @@ img.top-logo {
 
 .row.student-title-page.p {
   padding-top: 1.5%;
+  width:100%;
+}
+
+.row.student-title-page.p.t {
+  display: table;
+}
+
+.table-col{
+  float: none;
+  display: table-cell;
 }
 
 p.student-title-page {
