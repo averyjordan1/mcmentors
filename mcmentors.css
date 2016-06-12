@@ -212,17 +212,30 @@ img.top-logo {
 }
 
 .row.student-title-page.p {
-  width:40%;
   padding-top: 1.5%;
 }
 
-.student-title-page.p {
+p.student-title-page {
   font-family: 'Palanquin', sans-serif;
   animation-delay: 3s;
   padding-top: 1%;
   font-size: 11pt;
+  padding-left: 0;
 }
 
 .student-title-page.p.p2 {
   width: 40%;
+}
+
+h2.student-title-page {
+  font-family: 'Allerta Stencil', sans-serif;
+  animation-delay: 3s;
+  padding-top: 1%;
+}
+
+img.center2 {
+  text-align:center;
+width:100%;
+display:block;
+margin:auto;
 }
