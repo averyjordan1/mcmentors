@@ -54,9 +54,9 @@ Accent Text: #000000;
 		box-shadow: 0 0 10px;
 }
 
-/*.mcm-background {
+.mcm-background {
 		padding-top:50px;
-}*/
+}
 
 .mcm-background.mentors {
 		background-color: #2782CF
@@ -243,8 +243,7 @@ h2.student-title-page {
 }
 
 img.center2 {
-  text-align:center;
-width:100%;
+text-align:center;
 display:block;
 margin:auto;
 }
