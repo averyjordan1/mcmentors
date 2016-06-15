@@ -200,7 +200,8 @@ img.top-logo {
 }
 
 .row.student-title-page.top {
-    padding-top: 2.5%
+    padding-top: 2.5%;
+    font-size: 40px;
 }
 
 .student-title-page {
@@ -217,6 +218,7 @@ img.top-logo {
 .row.student-title-page.p {
   padding-top: 1.5%;
   width:100%;
+  font-size: 22px
 }
 
 .row.student-title-page.p.t {
@@ -232,7 +234,7 @@ p.student-title-page {
   font-family: 'Palanquin', sans-serif;
   animation-delay: 3s;
   padding-top: 1%;
-  font-size: 11pt;
+  font-size: 22px;
   padding-left: 0;
 }
 
@@ -250,4 +252,13 @@ img.center2 {
 text-align:center;
 display:block;
 margin:auto;
+}
+
+.row.top-row {
+  padding-top:15vh; 
+  padding-left:5%;
+}
+
+.row.icon-row {
+  padding-top:12vh; padding-left:5%;
 }
