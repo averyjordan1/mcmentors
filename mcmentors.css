@@ -122,6 +122,10 @@ Accent Text: #000000;
   background: linear-gradient(to right bottom, #F59949 50%, #C2793A 50%);
 }
 
+.section.two-tone-orange.flipped {
+  background: linear-gradient(to left top, #F59949 50%, #C2793A 50%);
+}
+
 .section.two-tone-orange.shadow{
   background: linear-gradient(to right bottom, #F59949 49.5%, #000000 .5%, #C2793A 50%);
   height: 93.7vh;

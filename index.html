@@ -26,7 +26,7 @@
 			</div>
 		</nav>
 		<!-- FRONT PAGE -->
-		<div class="section orange">
+		<section class="section orange">
 			<div class="row" style="height:40%"></div>
 			<div class="row" style="height:50%">
 				<div class="col-lg-10 col-lg-offset-1">
@@ -34,10 +34,10 @@
 			</div>
 			<div class="row" style="height:5%">
 			</div>
-		</div>
+		</section>
 
 		<!-- DESCRIPTION -->
-		<div class="section blue">
+		<section class="section blue">
 			<div class="row" style="height:40%"></div>
 			<div class="row" style="height:50%">
 				<div class="col-lg-10 col-lg-offset-1">
@@ -45,10 +45,10 @@
 			</div>
 			<div class="row" style="height:5%">
 			</div>
-		</div>
+		</section>
 
 		<!-- ABOUT US -->
-		<div class="section orange">
+		<section class="section orange">
 			<div class="row" style="height:40%"></div>
 			<div class="row" style="height:50%">
 				<div class="col-lg-10 col-lg-offset-1">
@@ -56,10 +56,10 @@
 			</div>
 			<div class="row" style="height:5%">
 			</div>
-		</div>
+		</section>
 
 		<!-- CONTACT US -->
-		<div class="section blue">
+		<section class="section blue">
 			<div class="row" style="height:35%">
 				<p class="center-title wtxt text-center" style="color:white; padding-top:15vh">Learn More</p>
 			</div>
@@ -120,7 +120,40 @@
 						$('#form-div').hide();
 					});
 					</script>
-			</div>
+			</section>
 		</div>
+		<script>
+
+		(function() {
+		  var delay = false;
+
+		  $(document).on('mousewheel DOMMouseScroll', function(event) {
+		    event.preventDefault();
+		    if(delay) return;
+
+		    delay = true;
+		    setTimeout(function(){delay = false},500)
+
+		    var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+
+		    var a= document.getElementsByTagName('section');
+		    if(wd < -50) {
+		      for(var i = 0 ; i < a.length ; i++) {
+		        var t = a[i].getClientRects()[0].top;
+		        if(t >= .25) break;
+		      }
+		    }
+		    else if(wd >50){
+		      for(var i = a.length-1 ; i >= 0 ; i--) {
+		        var t = a[i].getClientRects()[0].top;
+		        if(t < -.25) break;
+		      }
+		    }
+		    $('html,body').animate({
+		      scrollTop: a[i].offsetTop
+		    });
+		  });
+		})();
+	</script>
 	</body>
 </html>
