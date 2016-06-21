@@ -267,3 +267,15 @@ margin:auto;
 .row.icon-row {
   padding-top:12vh; padding-left:5%;
 }
+
+.student-form {
+  font-size: 10pt;
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+}
+
+.student-form.question {
+  font-size: 11.60pt;
+}
+
+
