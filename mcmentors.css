@@ -52,7 +52,6 @@ Accent Text: #000000;
 
 .navbar-shadow {
 		box-shadow: 0 0 10px;
-
 }
 
 .mcm-background {
@@ -101,18 +100,40 @@ Accent Text: #000000;
 .section.two-tone-blue{
   background: linear-gradient(to right bottom, #2782CF 50%, #1D629C 50%);
 }
+
+.section.two-tone-blue.flipped{
+  background: linear-gradient(to left top, #2782CF 50%, #1D629C 50%);
+}
+
 .section.two-tone-blue.shadow{
-  background: linear-gradient(to right bottom, #2782CF 49.5%, #000000 .5%, #1D629C 50%);
+  background: linear-gradient(to right bottom, #2782CF 49.25%, #000000 .5%, #1D629C 49.25%);
   height: 93.7vh;
 }
 
+.section.two-tone-blue.shadow.test {
+  background: linear-gradient(to left top, #1D629C  49.25%, #000000 .5%, #2782CF 49.25%);
+}
+
+.section.two-tone-blue.shadow.flipped {
+  background: linear-gradient(to left top, #2782CF 49.5%, #000000 .5%, #1D629C 50%);
+  height: 93.7vh;
+}
 .section.two-tone-orange{
   background: linear-gradient(to right bottom, #F59949 50%, #C2793A 50%);
+}
+
+.section.two-tone-orange.flipped {
+  background: linear-gradient(to left top, #F59949 50%, #C2793A 50%);
 }
 
 .section.two-tone-orange.shadow{
   background: linear-gradient(to right bottom, #F59949 49.5%, #000000 .5%, #C2793A 50%);
   height: 93.7vh;
+}
+
+.section.two-tone-orange.shadow.flipped {
+  background: linear-gradient(to left top, #F59949 49.5%, #000000 .5%, #C2793A 50%);
+}
 }
 
 img.center {
@@ -144,8 +165,12 @@ img.top-logo {
   animation: slowdownslide;
 }
 
+.delay-1-s{
+  animation-delay: 1.5s;
+}
+
 .delay-half-s {
-  animation-delay: 1s;
+  animation-delay: .5s;
 }
 
 @-webkit-keyframes slowdownslide {
@@ -157,10 +182,88 @@ img.top-logo {
     margin-right: 80%;
   }
 }
+
+/*ROW COLORING*/
 .row.primary-blue {
   background-color: #2782CF;
   z-index: 5;
 }
 .row.accent-blue {
   background-color: #1D629C;
+}
+
+/*STUDENTS PAGE*/
+
+.row.student-title-page {
+    padding-left: 5%;
+    width: 70%;
+}
+
+.row.student-title-page.top {
+    padding-top: 2.5%;
+    font-size: 40px;
+}
+
+.student-title-page {
+  font-family:'Allerta Stencil', sans-serif; 
+  color: white;
+  animation-delay: 1.5s;
+  text-align: left;
+}
+
+.student-title-page.top {
+  animation-delay: .5s;
+}
+
+.row.student-title-page.p {
+  padding-top: 1.5%;
+  width:100%;
+  font-size: 22px
+}
+
+.row.student-title-page.p.t {
+  display: table;
+}
+
+.table-col{
+  float: none;
+  display: table-cell;
+}
+
+p.student-title-page {
+  font-family: 'Palanquin', sans-serif;
+  animation-delay: 3s;
+  padding-top: 1%;
+  font-size: 22px;
+  padding-left: 0;
+  padding-top: 20pt;
+}
+
+p.student-title-page.m {
+  padding: 5%;
+}
+
+.student-title-page.p.p2 {
+  width: 40%;
+}
+
+h2.student-title-page {
+  font-family: 'Allerta Stencil', sans-serif;
+  animation-delay: 3s;
+  padding-top: 1%;
+}
+
+img.center2 {
+text-align:center;
+display:block;
+margin:auto;
+}
+
+.row.top-row {
+  padding-top:15vh; 
+  padding-left:5%;
+}
+
+.row.icon-row {
+  padding-top:12vh; padding-left:5%;
 }
