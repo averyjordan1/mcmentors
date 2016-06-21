@@ -236,6 +236,11 @@ p.student-title-page {
   padding-top: 1%;
   font-size: 22px;
   padding-left: 0;
+  padding-top: 20pt;
+}
+
+p.student-title-page.m {
+  padding: 5%;
 }
 
 .student-title-page.p.p2 {

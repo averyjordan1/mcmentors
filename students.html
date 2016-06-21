@@ -67,7 +67,7 @@
 
 				<!-- Description -->
 				<div class="col-lg-4 col-lg-offset-3" style="padding-right:5%">
-					<p class="student-title-page p text-right">Applying to college is complicated, but finding answers to questions doesn't need to be. Now you can call upon the collective knowledge of past MC students to help answer all your tough college application questions.</p>
+					<p class="student-title-page p text-center">Applying to college is complicated, but finding answers to questions doesn't need to be. Now you can call upon the collective knowledge of past MC students to help answer all your tough college application questions.</p>
 				</div>
 
 			</div>
@@ -92,7 +92,7 @@
 
 				<!-- Description -->
 				<div class="col-lg-4 col-lg-offset-3" style="padding-right:5%">
-					<p class="student-title-page p text-right"> MCM is able to offer a limited number of students one-on-one mentorship. An editing mentor is paired with one student over the course of the semester, and together the mentor and student work through the entire process of writing college essays, from first draft to clicking submit.</p>
+					<p class="student-title-page p text-center"> MCM is able to offer a limited number of students one-on-one mentorship. An editing mentor is paired with one student over the course of the semester, and together the mentor and student work through the entire process of writing college essays, from first draft to clicking submit.</p>
 				</div>
 
 			</div>
@@ -100,27 +100,56 @@
 
 		<!-- STUDENT OFFERING 3 -->
 		<section class="section two-tone-blue flipped">
-			<!-- Title -->
-			<div class="row top-row">
-				<div class="col-lg-5">
-					<h1 class="student-title-page top text-center">YOUR Universities</h1>
+
+			<!-- DESKTOP -->
+			<div class="visible-lg">
+				<!-- Title -->
+				<div class="row top-row">
+					<div class="col-lg-5">
+						<h1 class="student-title-page top text-center">YOUR Universities</h1>
+					</div>
+				</div>
+
+				<!-- Icon and Description -->
+				<div class="row icon-row">
+
+					<!-- Icon -->
+					<div class="col-lg-5 text-center">
+						<i class="fa fa-university fa-inverse" style="font-size:180px"></i>
+					</div>
+
+					<!-- Description -->
+					<div class="col-lg-4 col-lg-offset-3" style="padding-right:5%">
+						<p class="student-title-page p text-center"> MCM has mentors from over 50 different universities across the country, who are here to answer all your questions. Once you join MCM you have direct access to their insider knowledge about the school you're interested in.</p>
+					</div>
 				</div>
 			</div>
 
-			<!-- Icon and Description -->
-			<div class="row icon-row">
+			<!-- MOBILE -->
+			<div class="hidden-lg">
+				<!-- Title -->
+				<div class="row top-row">
+					<div class="col-lg-5">
+						<h1 class="student-title-page top text-center">YOUR Universities</h1>
+					</div>
+				</div>
 
-				<!-- Icon -->
-				<div class="col-lg-5 text-center">
-					<i class="fa fa-university fa-inverse" style="font-size:180px"></i>
+				<!-- ICON -->
+				<div class="row icon-row">
+					<div class="text-center">
+						<i class="fa fa-university fa-inverse" style="font-size:180px"></i>
+					</div>
 				</div>
 
 				<!-- Description -->
-				<div class="col-lg-4 col-lg-offset-3" style="padding-right:5%">
-					<p class="student-title-page p text-right"> MCM has mentors from over 50 different universities across the country, who are here to answer all your questions. Once you join MCM you have direct access to their insider knowledge about the school you're interested in.</p>
+				<div class="row" style="padding-top:5%">
+					<div class="col-lg-4 col-lg-offset-3" style="padding-right:5%">
+						<p class="student-title-page p m text-center"> MCM has mentors from over 50 different universities across the country, who are here to answer all your questions. Once you join MCM you have direct access to their insider knowledge about the school you're interested in.</p>
+					</div>
 				</div>
-
 			</div>
+
+
 		</section>
 
 
@@ -129,6 +158,43 @@
 			<div class="row" style="height:35%">
 					<p class="center-title wtxt text-center" style="color:white; padding-top:15vh">Ready to join?</p>
 			</div>
+
+			<form id="contact-form" action="" method="POST" target="no-target">
+				<div class="col-lg-4 col-lg-offset-4">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+		  						<label class="sr-only" for="FirstName">First Name</label>
+		  							<input type="text" class="form-control" id="FirstName" placeholder="First Name">
+		  					</div>
+	  					</div>
+	  					<div class="col-lg-6">
+		  					<div class="form-group">
+		  						<label class="sr-only" for="LastName">Last Name</label>
+		  							<input type="text" class="form-control" id="LastName" placeholder="Last Name">
+		  					</div>
+	  					</div>
+  					</div>
+				<div class="form-group">
+						<label class="sr-only" for="EmailAddress">Email address</label>
+	    					<input type="email" class="form-control" id="EmailAddress" placeholder="Email">
+  				</div>
+  				<div class="form-group">
+						<label for="Schools">What schools are you interested in?</label>
+	    					<textarea type="text" class="form-control" id="Schools" placeholder="Schools"></textarea>
+  				</div>
+  				<div class="form-group">
+  					<label for="Services">What MCM Services do you think you'll use?</label>
+  							<input type="checkbox" class="form-control" id="essays" placeholder="Essay Editing">
+  							<input type="checkbox" class="form-control" id="essays" placeholder="Essay Editing">
+  							<input type="checkbox" class="form-control" id="essays" placeholder="Essay Editing">
+  							<input type="checkbox" class="form-control" id="essays" placeholder="Essay Editing">
+  				</div>
+
+				<button id="submit" class="btn btn-default" type="submit">Contact Us</button>
+				</div>
+
+			</form>
 
 		</section>
 
