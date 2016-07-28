@@ -6,44 +6,45 @@
 		<link href="mcmentors.css" type="text/css" rel="stylesheet">
 		<link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 		<link href="animate.css" type="text/css" rel="stylesheet">
-		
 		<link href='https://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Palanquin:200' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 		<link rel="stylesheet" href="fa_icons/css/font-awesome.min.css">
 
 	</head>
 	<body>
-
+		<nav class="navbar navbar-default navbar-fixed-top navbar-shadow">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href='index.html'>
+						<img class="top-logo" alt="MC Mentors Logo" src="images/mcmlogo.png">
+					</a>
+				</div>
+				<div class="navbar-right">
+					<a href="students.html" class="navbar-text">Students</a>
+					<a href="mentors.html" class="navbar-text">Mentors</a>
+					<a href="resources.html" class="navbar-text">Resources</a>
+				</div>
+			</div>
+		</nav>
 		<!-- LANDING PAGE -->
-		<section class="section two-tone-blue anchored">
+		<section id="student-title-page" class="section two-tone-blue anchored">
 
 			<!-- TITLES -->
-			<div class="row student-title-page top">
-				<h1 class="animated slideInLeft student-title-page top">So, you're thinking about going out of state?</h1>
-			</div>
-			<div class="row student-title-page">
-				<h1 class="animated slideInLeft student-title-page"> MCM can help get you started. </h1>
+			<div id="t1" class="row">
+				<h1 class="animated fadeIn">So, you're thinking about going out of state?</h1>
 			</div>
 
 			<!-- MAIN TEXT -->
-			<div class="row student-title-page p t">
-				<div class="col-lg-5 col-md-6 table-col" style="padding-left:0">
-					<p class="animated fadeIn student-title-page visible-lg-block" style="font-size:11pt">  The website complement is designed as the entry point for the mentorship network. Initially it will feature an overview of the program, a list of the mentors who are participating in MCM, and a form to request access to the mentorship network. Over time, it will also be updated to include general resources for applying to out of state schools.  e resource section aims to be a  ltered set of the resources available on the web, primarily those that were useful to mentors when they applied to schools. College con dential provides a well established alternative to these re- sources, but, as anyone who has used college con dential is aware, college con den- tial certainly has biases and sometimes irrational advice.</p>
-					<p class="animated fadeIn student-title-page hidden-lg">
-					The website complement is designed as the entry point for the mentorship network. Initially it will feature an overview of the program, a list of the mentors who are participating in MCM, and a form to request access to the mentorship network.</p>
-				</div>
-				<div class="col-lg-4 col-lg-offset-2 col-md-6 table-col">
-					<h2 class="animated fadeIn student-title-page" style="padding-top:115px">Get the help you need, not what you don't.</h2>
-				</div>
-			</div>
-
-			<!-- SECONDARY TEXT -->
 			<div class="row">
-				<div class="col-lg-2 col-lg-offset-4 visible-lg-block">
-				</div>
-				<div class="col-lg-5 col-lg-offset-1 col-md-8 col-md-offset-4" style="padding-right:5%">
-					
-					<p class="animated fadeIn student-title-page p text-right" style="font-size:11pt">  The website complement is designed as the entry point for the mentorship network. Initially it will feature an overview of the program, a list of the mentors who are participating in MCM, and a form to request access to the mentorship network. Over time, it will also be updated to include general resources for applying to out of state schools.  e resource section aims to be a  ltered set of the resources available on the web, primarily those that were useful to mentors when they applied to schools. College con dential provides a well established alternative to these re- sources, but, as anyone who has used college con dential is aware, college con den- tial certainly has biases and sometimes irrational advice.</p>
+				<div class="col-lg-5" style="padding-left:0">
+					<p class="animated fadeIn">  You’re not alone! Graduates from Madison Central have gone on to great schools all across the country. School represented in our alumni network include nearby universities such as the University of Alabama, Louisiana State University, and the University of Oklahoma. Schools that are much further away are also represented including Duke University (North Carolina), Rice University (Texas), Marymount Manhattan College (New York), Stanford University (California), and Yale University (Connecticut). Wherever you’re trying to go, our network can give you the inside scoop on the application process and student life at the universities you’re interested in!</p>
+
+					<h2 class="animated fadeIn">Get the inside scoop from students who were just in your shoes</h2>
+				
+					<div class="col-lg-8" style="padding-left:0">
+						<p class="animated fadeIn">  Our mentors were just in your shoes (you probably know a lot of them!), so they can give you all the details about the application process - things like what tests to take, the best way to approach essays, and special scholarship opportunities ($$$$). Mentors can also help you get a good idea if you would like it at the school you are applying. The insights you’ll get from real students will be things that you can’t find in a college brochure.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -156,48 +157,50 @@
 		<!-- STUDENT REGISTER FORM -->
 		<section class="section blue">
 			<div class="row" style="height:30%">
-					<p class="center-title wtxt text-center" style="color:white; padding-top:12vh">Ready to join?</p>
+					<p id="form-header" class="center-title wtxt text-center" style="color:white; padding-top:12vh">Ready to join?</p>
 			</div>
 
-			<form id="contact-form" action="" method="POST" target="no-target">
+			<form id="student-form" action="" method="POST" target="no-target">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="row">
 					<div class="col-lg-6">
 						
 						<div class="form-group">
-								<label class="sr-only" for="FirstName">Name (First and Last)</label>
-									<input type="text" class="form-control" id="FirstName" placeholder="Name (First and Last)">
+								<label class="sr-only" for="Name">Name (First and Last)</label>
+									<input type="text" class="form-control" id="Name" placeholder="Name (First and Last)">
 							</div>	
 						<div class="form-group">
-								<label class="sr-only" for="EmailAddress">Email address</label>
-			    					<input type="email" class="form-control" id="EmailAddress" placeholder="Email">
+								<label class="sr-only" for="email">Email address</label>
+			    					<input type="email" class="form-control" id="email" placeholder="Email">
 		  				</div>
 		  				<div class="form-group">
-								<label class="student-form" for="Schools">What schools are you interested in?</label>
-			    					<textarea class="form-control" id="Schools" rows="4" placeholder="Schools"></textarea>
+								<label class="sr-only student-form" for="Schools">What schools are you interested in?</label>
+			    					<textarea class="form-control" id="Schools" rows="4" placeholder="What schools are you interested in?"></textarea>
 		  				</div>
 		  				<div class="form-group">
-								<label class="sr-only" for="ReachSchool">What would your reach school be?</label>
-									<input type="text" class="form-control" id="FirstName" placeholder="What is your 'reach' school?">
+								<label class="sr-only" for="Reach">What would your reach school be?</label>
+									<input type="text" class="form-control" id="Reach" placeholder="What is your 'reach' school?">
 						</div>
 		  				<div class="form-group">
-								<label class="student-form" for="Majors">What are some potential fields of study you are interested in?</label>
-			    					<textarea class="form-control" id="Schools" rows="5" placeholder="Fields of Study"></textarea>
+								<label class="sr-only student-form" for="Majors">What are some potential fields of study you are interested in?</label>
+			    					<input type="text" class="form-control" id="Majors" placeholder="What are some potential majors that interest you?">
 		  				</div>
-  					</div>
-			  			<div class="col-lg-6">
-			  				<div class="form-group">
-			  					<label class="student-form question" style="padding-right:25%" for="Grad-year">When will you graduate from Madison Central?</label>
+		  				<div class="form-group">
+			  					<label class="student-form question" for="Grad-year">When will you graduate from Madison Central?</label>
+			  					<br>
 			  					<div class="radio-inline">
-			  						<label class="student-form"><input type="radio" name="2017">2017</label>
+			  						<label class="student-form"><input type="radio" name="gradYear" value="2017">2017</label>
 			  					</div>
 			  					<div class="radio-inline">
-			  						<label class="student-form"><input type="radio" name="2018">2018</label>
+			  						<label class="student-form"><input type="radio" name="gradYear" value="2018">2018</label>
 			  					</div>
 			  					<div class="radio-inline">
-			  						<label class="student-form"><input type="radio" name="2019">2019</label>
+			  						<label class="student-form"><input type="radio" name="gradYear" value="2019">2019</label>
 			  					</div>
 			  				</div>
+  					</div>
+			  			<div class="col-lg-6">
+			  				
 			  				<div class="form-group">
 			  					<label class="student-form question" for="Needs">Which of the following best describes your situation?</label>
 			  					<div class="radio">
@@ -215,31 +218,90 @@
 							<div class="form-group">
 			  					<label class="student-form question" for="Services">What topics would you like to know more about?</label>
 			  					<div class="checkbox">
-								  <label class="student-form"><input type="checkbox" value="">Merit-Based Financial Aid</label>
+								  <label class="student-form"><input name="box" type="checkbox" value="Merit-Based Financial Aid">Merit-Based Financial Aid</label>
 								</div>
 								<div class="checkbox">
-								  <label class="student-form"><input type="checkbox" value="">Need-Based Financial Aid</label>
+								  <label class="student-form"><input name="box" type="checkbox" value="Need-Based Financial Aid">Need-Based Financial Aid</label>
 								</div>
 								<div class="checkbox">
-								  <label class="student-form"><input type="checkbox" value="">Doing the college application/label>
+								  <label class="student-form"><input name="box" type="checkbox" value="Filling out the college application">Doing the college application</label>
 								</div>
 								<div class="checkbox">
-								  <label class="student-form"><input type="checkbox" value="">Life in college</label>
+								  <label class="student-form"><input name="box" type="checkbox" value="Life in college">Life in college</label>
 								</div>
 								<div class="checkbox">
-								  <label class="student-form"><input type="checkbox" value="">Choosing the right college</label>
+								  <label class="student-form"><input name="box" type="checkbox" value="Choosing the right college">Choosing the right college</label>
 								</div>
 			  				</div>
   						</div>
   					</div>
   				</div>
-  					<div class="row" style="text-align:center; padding-top:2vh">
+  					<div class="row" style="text-align:center; padding-top:1vh">
 						<button id="submit" class="btn btn-default" type="submit">Join MCM!</button>
 					</div>
+  				</div>
+  				</div>
+  					<iframe src="#" id="no-target" name="no-target" style="visibility:hidden; height:0px"></iframe>
   				</div>
 			</form>
 
 		</section>
+		<!-- FORM SUBMIT -->
+		<script>
+				$('#student-form').one('submit', function (){
+					var q1id = 'entry.1664995520';
+					var q2id = 'entry.47761100';
+					var q3id = 'entry.226934397';
+					var q4id = 'entry.1027199829';
+					var q5id = 'entry.978176095';
+					var q6id = 'entry.671620966';
+					var q7id = 'entry.1951085587';
+					var q8id = 'entry.189506467';
+
+					var q1 = encodeURIComponent($('#Name').val());
+					var q2 = encodeURIComponent($('#email').val());
+					var q3 = encodeURIComponent($('#Schools').val());
+					var q4 = encodeURIComponent($('#Reach').val());
+					var q5 = encodeURIComponent($('#Majors').val());
+
+					var q6;
+					var radios = document.getElementsByName('gradYear');
+
+					for (var i = 0, length = radios.length; i < length; i++) {
+					    if (radios[i].checked) {
+					        q6 = radios[i].value;
+					        break;
+					    }
+					}
+
+					var q7;
+					var radios = document.getElementsByName('optradio');
+
+					for (var i = 0, length = radios.length; i < length; i++) {
+						if (radios[i].checked) {
+							q7 = radios[i].value;
+							break;
+						}
+					}
+
+					var q8 = ''; 
+					var boxes = document.getElementsByName('checkbox');
+
+					for (var i=0, length = boxes.length; i<length; i++) {
+						if (boxes[i].checked) {
+							q6 = q6  + boxes[i].value + "; ";
+						}
+					}
+
+					var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSeX0NRESfk_jwy7hHBMi8rUfUZh6fZGgRew0O6ft_G_QdpeiQ/formResponse?';
+					var submitRef = '&submit=Submit';
+					var submitURL = (baseURL + q1id + "=" + q1 + "&" + q2id + "=" + q2 + "&" + q3id + "=" + q3 + "&" + q4id + "=" + q4 + "&"+ q5id + "=" + q5 + "&"+ q6id + "=" + q6 + "&" + q7id + "=" + q7 + "&" + q8id + "=" + q8 + submitRef);
+					console.log(submitURL);
+					$(this)[0].action=submitURL;
+					$('#form-header').text("Thanks! We'll be in touch.");
+					$('#student-form').hide();
+				});
+			</script>
 
 		<!-- SCROLLING JS -->
 		<script>
@@ -256,14 +318,15 @@
 
 			    var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
-			    var a= document.getElementsByTagName('section');
-			    if(wd < -50) {
+			    var a = document.getElementsByTagName('section');
+			    console.log(a);
+			    if(wd < -20) {
 			      for(var i = 0 ; i < a.length ; i++) {
 			        var t = a[i].getClientRects()[0].top;
 			        if(t >= .25) break;
 			      }
 			    }
-			    else if(wd >50){
+			    else if(wd > 20) {
 			      for(var i = a.length-1 ; i >= 0 ; i--) {
 			        var t = a[i].getClientRects()[0].top;
 			        if(t < -.25) break;

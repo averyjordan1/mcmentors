@@ -18,25 +18,6 @@ Accent Text: #000000;
 	to {color: yellow;}
 }
 
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-}
 .navbar{
   height: 6vh;
 }
@@ -55,7 +36,7 @@ Accent Text: #000000;
 }
 
 .mcm-background {
-		padding-top:50px;
+
 }
 
 .mcm-background.mentors {
@@ -65,7 +46,7 @@ Accent Text: #000000;
 
 .center-title {
 		font-size: 40pt;
-		font-family: "Allerta Stencil", sans-serif;
+		font-family: "Oswald", sans-serif;
 }
 
 .center-title.wtxt {
@@ -185,7 +166,7 @@ img.top-logo {
 
 /*ROW COLORING*/
 .row.primary-blue {
-  background-color: #2782CF;
+
   z-index: 5;
 }
 .row.accent-blue {
@@ -200,7 +181,7 @@ img.top-logo {
 }
 
 .row.student-title-page.top {
-    padding-top: 2%;
+    padding-top: 3%;
     font-size: 200px;
 }
 
@@ -265,7 +246,7 @@ margin:auto;
 }
 
 .row.icon-row {
-  padding-top:12vh; padding-left:5%;
+  padding-top:8vh; padding-left:5%;
 }
 
 .student-form {
@@ -287,3 +268,169 @@ margin:auto;
   font-size: 60px;
 }
 
+
+/*MENTORS*/
+#mentor-form {
+  color: black;
+}
+
+.mentors-col {
+  padding: 0;
+}
+
+.left-row {
+  padding-left: 5%;
+}
+
+.spacer {
+  padding-top: 5vh;
+}
+
+.mentor-title {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+h3 .mentor {
+  font-size: 25px;
+}
+
+#mentor-front p {
+  font-family: "Palanquin", sans-serif;
+  font-size: 11pt;
+}
+
+.sexy-line{ 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 1000, from(#fff), to(#000));
+}
+
+.vertical-divider{
+
+    position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-left:1px solid black;
+}
+
+#collab .col-lg-3 {
+  font-family: "Palanquin", sans-serif;
+  font-size: 12pt;
+  text-align: center;
+}
+
+#collab .fa {
+  font-size: 50px;
+}
+
+#collab-sec h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+#collab-sec {
+  color:white;
+}
+
+#collab-sec #collab-header {
+  height:20vh; 
+  text-align:center; 
+  padding-top:8vh;
+}
+
+#collab-sec #line1 {
+  width:75%; 
+  margin: 0px 0 0 -37.5%; 
+  left:50%; 
+  position:absolute;
+}
+#collab .col-lg-4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center;
+}
+
+#title-page h1 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 30pt;
+  color: white;
+}
+
+#title-row {
+  padding-top:10vh;
+  text-align: center;
+}
+
+#title-page .center2 {
+  width: 100%;
+}
+
+#title-page #filler {
+  height:10vh;
+}
+
+#title-page #scroll-guide {
+  height:10vh;
+}
+
+#title-page #line1 {
+  width:75%; 
+  margin: 0px 0 0 -37.5%; 
+  left:50%; 
+  position:absolute;
+}
+
+#mentors h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+#form-header {
+  font-family: "Oswald", sans-serif;
+}
+
+#more-info {
+  padding-top: 10vh;
+}
+
+#more-info p {
+  font-family: "Palanquin", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 16pt; 
+}
+
+#student-title-page {
+  color: white;
+
+}
+
+#student-title-page h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+#student-title-page h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+#student-title-page p{
+  font-family: 'Palanquin', sans-serif;
+  font-size: 11pt;
+  padding-top: 20px;
+}
+
+#student-title-page div {
+  padding-left: 3%;
+}
+
+#student-title-page #t1 {
+  padding-top: 6vh;
+}
